@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Interaction Search Tool</title>
+</head>
+<body>
+    <h1>Drug Interaction Search Tool</h1>
+    <form method="post" action="/">
+        <label for="drug_name1">Enter the first drug name:</label>
+        <input type="text" name="drug_name1" required><br>
+        <label for="drug_name2">Enter the second drug name:</label>
+        <input type="text" name="drug_name2" required><br>
+        <input type="submit" value="Search">
+    </form>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
+
